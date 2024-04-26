@@ -4,6 +4,7 @@
 
   --colour-pink-primary: #D649A4;
   --colour-pink-secondary: #FEE2EE;
+  --colour-plum-primary: #6D4B86;
 }
 
 @media (prefers-color-scheme: dark) {
