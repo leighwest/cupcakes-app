@@ -1,0 +1,9 @@
+
+.header {
+    color: $colour-pink-primary;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
