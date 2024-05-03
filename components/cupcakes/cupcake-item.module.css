@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 250px;
+  height: 500px;
   border-radius: 4px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -13,7 +13,12 @@
 }
 
 .headerText h2 {
-  color: var(--colour-plum-primary)
+  color: var(--colour-plum-primary);
+  text-align: center;
+}
+
+.image {
+  align-items: center;
 }
 
 .price {
