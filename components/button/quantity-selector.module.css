@@ -13,4 +13,12 @@
 
 .clickable:hover {
   cursor: pointer;
+  user-select: none;
+}
+
+.decrement:active{
+  -webkit-transform:translateY(0.25em);
+}
+.increment:active{
+  -webkit-transform:translateY(-0.25em);
 }
