@@ -2,11 +2,13 @@ import Image from 'next/image';
 
 import { Cupcake } from '@/model/cupcake';
 import classes from './cupcake-item.module.css';
+import QuantitySelector from '@/components/button/quantity-selector';
+import AddToCart from '@/components/button/add-to-cart';
 
 export default function CupcakeItem({ title, image, price, summary }: Cupcake) {
   return (
     <article className={classes.cupcake}>
-      <header>
+      <header className={classes.header}>
         <div className={classes.image}>
           <Image
             src={image as string}
@@ -20,11 +22,13 @@ export default function CupcakeItem({ title, image, price, summary }: Cupcake) {
         </div>
       </header>
       <div>
-        <p className={classes.price}>{price}</p>
+        <p className={classes.price}>${price} ea</p>
       </div>
       <div>
         <p className={classes.summary}>{summary}</p>
       </div>
+      <QuantitySelector />
+      <AddToCart />
     </article>
   );
 }
