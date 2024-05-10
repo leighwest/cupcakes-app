@@ -48,15 +48,19 @@
 
 html,
 body {
-  max-width: 75vw;
   overflow-x: hidden;
   background: var(--colour-pink-secondary);
-
-  margin: 80px auto 0 auto;
-  padding: 0 60px;
+  margin: 40px auto 0 auto;
   box-sizing: border-box;
 }
 
+@media (min-width: 1121px) {
+  body {
+    max-width: 65vw;
+    padding: 0 60px;
+    margin: 80px auto 0 auto;
+  }
+}
 
 a {
   color: inherit;
